@@ -1,0 +1,2 @@
+Here, in minix, the parent process is created first which creates a child process and processes exit in reverse order,
+i.e., the child process exits first and then the parent process exits. It is as expected.

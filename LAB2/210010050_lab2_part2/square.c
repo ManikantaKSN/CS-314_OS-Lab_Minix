@@ -8,7 +8,7 @@ int main(int argc, char* argv[]){
         int num = atoi(argv[argc-1]) * atoi(argv[argc-1]);
         printf("Square: Current process id: %d, Current result: %d\n", getpid(), num);
         sprintf(argv[argc-1], "%d", num);
-        if(argc>2) execvp(argv[0], argv);
+        if(argc>2) execvp(argv[1], argv+1);
     }
     return 0;
 }
