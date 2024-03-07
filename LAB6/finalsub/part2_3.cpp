@@ -130,8 +130,8 @@ int main(int argc, char *argv[]){
     int pid = fork();
     if (pid == 0) { //child process
         close(fds[0]);
-        // edgeDetection_T2(image);
-        imageBlur_T3(image);
+        edgeDetection_T2(image);
+        // imageBlur_T3(image);
         close(fds[1]);
         exit(0);
     }
