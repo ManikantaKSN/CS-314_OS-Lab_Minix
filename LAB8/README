@@ -1,0 +1,11 @@
+To run the files, use the commands:
+
+1. g++ fifo.cpp -o fifo
+   ./fifo 60 20 60 request_files/req1.dat
+
+2. g++ lru.cpp -o lru
+   ./lru 60 20 60 request_files/req1.dat
+
+3. g++ random.cpp -o random
+   ./random 60 20 60 request_files/req1.dat
+
