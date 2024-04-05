@@ -242,8 +242,8 @@ int do_exit()
   }
   else {
       exit_proc(mp, m_in.m_lc_pm_exit.status, FALSE /*dump_core*/);
-      printf("Minix 210010050: PID %d exited\n", mp->mp_pid); // Print the process(with PID) that exited
   }
+  printf("Minix 210010050: PID %d exited\n", mp->mp_pid); // Print the process(with PID) that exited
   return(SUSPEND);		/* can't communicate from beyond the grave */
 }
 
